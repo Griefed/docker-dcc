@@ -1,7 +1,7 @@
 # dcc-Container
 https://github.com/bucherfa/dcc-web in a container!
 
-Creates a Container which runs [bucherfa](https://github.com/bucherfa) [dcc-web](https://github.com/bucherfa/dcc-web), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://i.imgur.com/HIPMnF8.png
+Creates a Container which runs [bucherfa](https://github.com/bucherfa) [dcc-web](https://github.com/bucherfa/dcc-web), with [httpd:alpine](https://hub.docker.com/_/httpd) as the base image, as seen on https://bucherfa.github.io/dcc-web/. 
 
 # Deploy with docker-compose:
 ```
