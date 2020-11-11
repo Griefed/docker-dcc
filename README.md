@@ -13,7 +13,7 @@ docker-dcc
 
 Convert docker run/create commands to docker-compose.yml files.
 
-[![](img/docker-dcc_screenshot.png)](https://github.com/bucherfa/dcc-web)
+[![dcc-web](img/docker-dcc_screenshot.png)](https://github.com/bucherfa/dcc-web)
 
 ---
 
