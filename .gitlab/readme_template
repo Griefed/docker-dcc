@@ -17,9 +17,9 @@ $DESCRIPTION
 
 ---
 
-Creates a Container which runs [$CREATOR_USERNAME's](https://github.com/$CREATOR_USERNAME) [$CREATOR_REPONAME](https://github.com/$CREATOR_USERNAME/$CREATOR_REPONAME), with [lsiobase/$BASE_IMAGE](https://hub.docker.com/r/lsiobase/$BASE_IMAGE) as the base image, as seen on $EXAMPLE_SITE_LINK.
+Creates a Container which runs [$CREATOR_USERNAME2's](https://github.com/$CREATOR_USERNAME2) [$CREATOR_REPONAME2](https://github.com/$CREATOR_USERNAME2/$CREATOR_REPONAME2), a fork of [$CREATOR_USERNAME1's](https://github.com/$CREATOR_USERNAME1) [$CREATOR_REPONAME1](https://github.com/$CREATOR_USERNAME1/$CREATOR_REPONAME1) , with [lsiobase/$BASE_IMAGE](https://hub.docker.com/r/lsiobase/$BASE_IMAGE) as the base image, as seen on $EXAMPLE_SITE_LINK.
 
-The lasiobase/$BASE_IMAGE image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
+The lsiobase/$BASE_IMAGE image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
 ## Deployment
@@ -31,7 +31,7 @@ version: '3.6'
 services:
   $DOCKERHUB_REPONAME:
     container_name: $DOCKERHUB_REPONAME
-    image: griefed/$DOCKERHUB_REPONAME
+    image: griefed/$DOCKERHUB_REPONAME:$DOCKERHUB_TAG
     restart: unless-stopped
     volumes:
       - ./path/to/config:/config
@@ -48,7 +48,7 @@ services:
 
 To run this container on a Raspberry Pi, use the `arm`-tag. I've tested it on a Raspberry Pi 3B.
 
-`griefed/$DOCKERHUB_REPONAME:arm`
+`$DOCKERHUB_USERNAME/$DOCKERHUB_REPONAME:arm`
 
 ## Configuration
 
@@ -56,7 +56,6 @@ Configuration | Explanation
 ------------ | -------------
 [Restart policy](https://docs.docker.com/compose/compose-file/#restart) | "no", always, on-failure, unless-stopped
 config volume | Contains config files and logs.
-data volume | Contains your/the containers important data.
 TZ | Timezone
 PUID | for UserID
 PGID | for GroupID
