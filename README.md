@@ -13,7 +13,7 @@ docker-dcc
 
 Convert docker run/create commands to docker-compose.yml files.
 
-[![dcc-web](img/docker-dcc_screenshot.png)](https://github.com/bucherfa/dcc-web)
+[![](img/docker-dcc_screenshot.png)](https://github.com//)
 
 ---
 
@@ -94,7 +94,7 @@ services:
       - PUID=1000  # User ID
       - PGID=1000  # Group ID
     ports:
-      - 80:80
+      - 8080:80
       - 443:443
 ```
 
