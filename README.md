@@ -1,4 +1,4 @@
-[![docker-dcc](img/docker-dcc_header.png)](https://github.com/bucherfa/dcc-web)
+[![docker-dcc](img/docker-dcc_header.png)](https://github.com/Griefed/docker-dcc)
 
 ---
 
@@ -19,7 +19,7 @@ Convert docker run/create commands to docker-compose.yml files.
 
 Creates a Container which runs [Griefed's](https://github.com/Griefed) [dcc-web](https://github.com/Griefed/dcc-web), a fork of [bucherfa's](https://github.com/bucherfa) [dcc-web](https://github.com/bucherfa/dcc-web) , with [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) as the base image, as seen on https://bucherfa.github.io/dcc-web/.
 
-The lsiobase/nginx image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
+The [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
 ## Deployment
