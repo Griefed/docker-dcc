@@ -1,4 +1,4 @@
-[![docker-dcc](img/docker-dcc_header.png)](https://github.com/Griefed/docker-dcc)
+[![docker-dcc](https://i.griefed.de/images/2020/11/18/docker-dcc_header.png)](https://github.com/Griefed/docker-dcc)
 
 ---
 
@@ -13,7 +13,7 @@ docker-dcc
 
 Convert docker run/create commands to docker-compose.yml files.
 
-[![](img/docker-dcc_screenshot.png)](https://github.com//)
+[![](https://i.griefed.de/images/2020/11/18/docker-dcc_screenshot.png)](https://github.com//)
 
 ---
 
